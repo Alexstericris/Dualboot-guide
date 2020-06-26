@@ -7,6 +7,8 @@ How to install both Windows and Linux on a machine.
     1x ext4 ->Ubuntu, at least 50 GB
     
 2. USB Stick 8+ GB
+If you have Windows, use Rufus, else use unetbootin
+
    -ntfs for booting Windows
    -fat32 for Ubuntu
    
@@ -25,3 +27,14 @@ Windows
    - follow the steps until you get here, and then select Custom
    
    - !! select only the ntfs partition and go further
+
+
+__Splitting Your Partitions
+    Ubuntu
+        - install gparted: sudo apt-get install gparted
+        - !! if you have only one partition, you will have to split the partitions via terminal -> tutorial: https://opensource.com/article/18/6/how-partition-disk-linux
+        - make the needed partitions and save
+        
+    Windows
+        - rightclick on My Computer and go to properties
+        - go to partitions and add 1 swap and 1 ext4 partitions
